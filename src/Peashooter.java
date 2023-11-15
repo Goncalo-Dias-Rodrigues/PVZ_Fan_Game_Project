@@ -1,16 +1,23 @@
-import java.util.Random;
+public class Peashooter extends Character {
 
-public class Peashooter extends Plants {
-
+    String type = "Plant";
+    int suncost = 100;
+    int health = 125;
+    int damageItCanDo = 35;
     int cooldown = 0;
 
 
-    public Peashooter(String name, int sunCost, int health, int damageItCanDo) {
-        super(name, sunCost, health, damageItCanDo);
+    public Peashooter(String name) {
+        super(name);
+    }
+
+    public void takeDamage(int damageDone){
+
+        this.health -= damageDone;
+
     }
 
     public int splashDamage(){
-
         double min = 0.0;
         double max = 1.0;
         double splashAffect = min + Math.random() * (max - min);

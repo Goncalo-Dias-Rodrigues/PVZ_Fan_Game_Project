@@ -5,8 +5,8 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        Peashooter rockPea = new Peashooter("Rock Pea", 200, 150, 30);
-        Gargantuar normalGargantuar = new Gargantuar("Gargantuar", 300, 500, 50);
+        Peashooter rockPea = new Peashooter("Rock Pea");
+        Gargantuar normalGargantuar = new Gargantuar("Gargantuar");
 
         do {
             System.out.println("The zombie has: " + normalGargantuar.health + " of health.");

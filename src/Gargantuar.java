@@ -1,9 +1,19 @@
-public class Gargantuar extends Zombies{
+public class Gargantuar extends Character{
 
+    String type = "Plant";
+    int braincost = 300;
+    int health = 500;
+    int damageItCanDo = 50;
     int cooldown = 0;
 
-    public Gargantuar(String name, int brainCost, int health, int damageItCanDo) {
-        super(name, brainCost, health, damageItCanDo);
+    public Gargantuar(String name) {
+        super(name);
+    }
+
+    public void takeDamage(int damageDone){
+
+        this.health -= damageDone;
+
     }
 
     public int splashDamage(){
